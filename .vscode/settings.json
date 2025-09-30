@@ -1,0 +1,101 @@
+{
+  // -----------------------
+  // General Editor Settings
+  // -----------------------
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.trimAutoWhitespace": true,
+  "editor.detectIndentation": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+
+  // -----------------------
+  // Language-specific formatters
+  // -----------------------
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[cairo]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+
+  // -----------------------
+  // File Associations
+  // -----------------------
+  "files.associations": {
+    "*.rs": "rs"
+  },
+
+  // -----------------------
+  // Stellar Token Colors
+  // -----------------------
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["keyword.stellar"],
+        "settings": { "foreground": "#08B5E5", "fontStyle": "bold" }
+      },
+      {
+        "scope": ["variable.other.stellar"],
+        "settings": { "foreground": "#FFD700" }
+      },
+      {
+        "scope": ["entity.name.function.stellar"],
+        "settings": { "foreground": "#00FFCC", "fontStyle": "italic" }
+      },
+      {
+        "scope": ["storage.stellar"],
+        "settings": { "foreground": "#5BC0EB" }
+      },
+      {
+        "scope": ["event.stellar"],
+        "settings": { "foreground": "#FFD700", "fontStyle": "bold" }
+      }
+    ]
+  },
+
+  // -----------------------
+  // VS Code UI Colors (Stellar Theme)
+  // -----------------------
+  "workbench.colorCustomizations": {
+    "editor.background": "#0D1F2D",
+    "editor.foreground": "#E0E0E0",
+    "editorLineNumber.foreground": "#5A5A5A",
+    "editor.selectionBackground": "#12344D",
+    "editorCursor.foreground": "#08B5E5",
+    "editorWhitespace.foreground": "#3A3A3A",
+
+    "sideBar.background": "#0F1A25",
+    "sideBar.foreground": "#E0E0E0",
+
+    "statusBar.background": "#0D1F2D",
+    "statusBar.foreground": "#08B5E5",
+
+    "activityBar.background": "#0F1A25",
+    "activityBar.foreground": "#08B5E5",
+    "activityBarBadge.background": "#FFD700",
+    "activityBarBadge.foreground": "#0D1F2D",
+
+    "terminal.background": "#0D1F2D",
+    "terminal.foreground": "#E0E0E0"
+  },
+
+  "workbench.sideBar.location": "left",
+  "workbench.statusBar.visible": true,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.enablePreview": false,
+
+  // -----------------------
+  // Terminal
+  // -----------------------
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.cursorBlinking": true
+}
